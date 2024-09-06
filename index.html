@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head style="background-color:DodgerBlue;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daughters of banaras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+
+    <link href="https://fonts.cdnfonts.com/css/samarkan" rel="stylesheet">
+    <style = "background-color:DodgerBlue;"> 
+        /* Custom CSS */
+
+                /* Custom styles */
+
+/*         @import url('https://fonts.cdnfonts.com/css/samarkan');*/
+
+
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-btn img {
+            width: 40px;
+            height: 40px;
+        }
+        header {
+            background: linear-gradient(135deg, #f8f8f8 0%, #e0e0e0 100%);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .navbar-brand:hover img {
+            transform: scale(1.1);
+        }
+
+        .dropdown-menu {
+            border-radius: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown-item {
+            font-weight: 500;
+            color: #6c757d;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .dropdown-item:hover {
+            background-color: #6c757d;
+            color: #fff;
+        }
+
+        .btn-outline-secondary {
+            border-radius: 20px;
+            border: 2px solid #6c757d;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .btn-outline-secondary:hover {
+            background-color: #6c757d;
+            color: #fff;
+        }
+        .product-category {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 30px;
+            height: 600px; /* Set a fixed height for the container */
+/*            font-family: 'Samarkan';*/
+
+        }
+
+        .product-category img {
+            width: 100%;
+            height: 100%; /* Force the image to fill the container's height */
+            object-fit: contain; /* Ensure the image covers the container without distortion */
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .product-category img:hover {
+            transform: scale(1.05);
+        }
+
+        .testimonial-img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+        
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        .footer a {
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hover effect for product categories */
+        .product-category .category-link {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            font-family: 'Samarkan';
+        }
+
+        .category-img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .category-text {
+            transition: transform 0.3s ease;
+            font-size: 1.5rem;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5); /* Background for text */
+        }
+
+        .category-link:hover .category-img {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        .category-link:hover .category-text {
+            transform: scale(1.2);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body style="background-color:lightcoral;">
+
+    <!-- Section 1: Header with Logo, Dropdown, and About Us -->
+    <header class="bg-light py-3" >
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <a href="#" class="navbar-brand  mb-2 mb-md-0"> 
+                <img src="daughters_of_banaras.png" alt="Daughters of Banaras" height="50"> 
+            </a>
+            <div>
+                <div class="dropdown d-inline me-4">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Banarasi Saree Categories
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#Kora">Kora Organza</a></li>
+                        <li><a class="dropdown-item" href="#Khaddi">Khaddi Georgette</a></li>
+                        <li><a class="dropdown-item" href="#Tissue">Tissue Silk</a></li>
+                    </ul>
+                </div>
+                <a href="#about-us" class="btn btn-outline-secondary">About Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 2: Jumbotron with Testimonials -->
+    <section class="jumbotron text-center bg-light">
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="cat1.jpg" class="testimonial-img" alt="Image1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Discover the Art of Weaving Tradition into Every Thread</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="cat2.jpg" class="testimonial-img" alt="Image2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Wrap Yourself in the Timeless Elegance of Banarasi Sarees</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="cat3.jpg" class="testimonial-img" alt="Image3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Let Your Style Speak the Language of Heritage and Grace</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section 3: Product Categories -->
+<section class="container my-5 text-center">
+    <div class="row">
+        <div class="col-md-4 product-category">
+            <a href="#Khaddi" class="category-link position-relative d-block">
+                <img src="georgette1.png" alt="Khaddi Georgette" class="img-fluid rounded category-img">
+                <h5 class="category-text position-absolute bottom-0 start-0 end-0 text-center text-white">Khaddi Georgette</h5>
+            </a>
+        </div>
+        <div class="col-md-4 product-category">
+            <a href="#Tissue" class="category-link position-relative d-block">
+                <img src="tissue.png" alt="Tissue Silk" class="img-fluid rounded category-img">
+                <h5 class="category-text position-absolute bottom-0 start-0 end-0 text-center text-white">Tissue Silk</h5>
+            </a>
+        </div>
+        <div class="col-md-4 product-category">
+            <a href="#Kora" class="category-link position-relative d-block">
+                <img src="organza.png" alt="Kora Organza" class="img-fluid rounded category-img">
+                <h5 class="category-text position-absolute bottom-0 start-0 end-0 text-center text-white">Kora Organza</h5>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Section 4: Motto and Website Purpose -->
+    <section class="container my-5">
+        <h2 class="text-center">Our Motto</h2>
+        <p class="text-center">"Bringing traditional elegance to your wardrobe with the finest sarees, suits, and lehengas. Our mission is to provide quality ethnic wear that enhances your style and confidence."</p>
+    </section>
+
+    <!-- Section 5: Footer with Privacy Policy and Social Links -->
+    <footer class="footer">
+        <p>Privacy Policy | <a href="https://wa.me/919311688304" target="_blank">WhatsApp</a> | <a href="https://instagram.com/daughtersofbanaras" target="_blank">Instagram<i class="fa fa-instagram"></i></a></p>
+        <div class="footer-left">
+        <p>Powered by: ConfidentMeAI</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919311688304?text=Hello,%20I%20would%20like%20to%20inquire%20about%20your%20saree%20collection." 
+       class="whatsapp-btn" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat">
+    </a>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
